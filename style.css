@@ -1,66 +1,56 @@
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
-.site-header {
+header {
     background-color: #1f2933;
-    color: #fff;
-    padding: 20px;         
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-
-.site-nav {
+nav {
     background-color: #374151;
-    padding: 10px;
 }
 
-.site-nav ul {
+nav ul {
     list-style: none;
-    margin: 0;             
-    padding: 0;
+    margin: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.site-nav a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
+    padding: 6px 12px;
 }
 
-
-.container {
-    max-width: 900px;
-    margin: 30px auto;      
-    padding: 10px;
+nav a.active,
+nav a:hover {
+    background-color: #1f2933;
+    border-radius: 4px;
 }
 
-
-.card {
-    background-color: #ffffff;
-    border: 2px solid #e5e7eb;   
-    padding: 20px;              
-    margin-bottom: 20px;        
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    flex: 1;
+    background-color: white;
 }
 
-
-.card img {
-    display: block;
-    margin-bottom: 15px;
-    border: 2px solid #ccc;
-    padding: 5px;
-    width: 150px;
-}
-
-
-.site-footer {
-    text-align: center;
-    padding: 15px;
+footer {
+    margin-bottom: 30px;
     background-color: #1f2933;
     color: white;
+    text-align: center;
+    padding: 15px;
 }
