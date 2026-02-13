@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+</div>
+
+<script>
+    if (!localStorage.getItem("loggedInUser")) {
+        window.location.href = "index.html";
+    }
+
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "index.html";
+    });
+</script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+</div>
+
+<script>
+    if (!localStorage.getItem("loggedInUser")) {
+        window.location.href = "index.html";
+    }
+
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "index.html";
+    });
+</script>
+
+</body>
+</html>
+>>>>>>> 19e593398cf4b5fa766dbb70afee9b59889b81bf
